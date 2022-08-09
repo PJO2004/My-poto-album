@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 사진들</title>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/59524278?s=48&v=4">
+    <link rel="stylesheet" href="sources/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/5dd8560a49.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrap">
+        <h1>My PORTFOLIO</h1>
+        <p class="subintro">취미로 사진 모으는 나의 사진첩 <br> My photo album</p>
+        <ul class="auto">
+            <li class="btnins">
+                <a class="fa-brands fa-instagram" href="https://www.instagram.com/jeongwon5364/" target="_blank"></a>
+            </li>
+        </ul>
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="./sources/images/pc1.jpg">
+                        <h2>Hanbom high School road</h2>
+                        <p>날이 맑을 때 한봄고가는 길에서 찍은 사진
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="./sources/images/pc4.jpg">
+                        <h2>Sungdae Station Bridge Road</h2>
+                        <p>성대역 지하철 다리 주위 길거리에서 찍은 노을.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="./sources/images/pc3.jpg">
+                        <h2>Haenggung-dong</h2>
+                        <p>행궁동에서 버스 기다리다 찍은 사진
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="./sources/images/pc2.jpeg">
+                        <h2>Hwaseong Haenggung</h2>
+                        <p>화성 행궁 놀러갈때 너무 더워서 찍은 사진
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".wrap", {
+          pagination: {
+                el: ".swiper-pagination",
+          },
+          slidesPerView: "auto",
+          spaceBetween: 50,
+          loop: true,
+          centeredSlides: true,
+          speed: 1000,
+          direction: "horizontal" ,
+          effect: "coverflow",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: -100,
+            depth: 400,
+            modifier: 1,
+            slideShadows: false
+          }
+        });
+    </script>
+    </div>
+</body>
+</html>
